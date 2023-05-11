@@ -1,0 +1,127 @@
+.flex-container {
+	/*background-image: url(Sky_back.jpg);*/
+	background-color: skyblue;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-container > div {
+	background-color: none;
+	color:black;
+	width:50%;
+	text-align: center;
+	font-size: 30px;
+	margin:0px;
+}
+
+.proj {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.proj > div {
+	display: flex;
+	background-color: none;
+	color:black;
+	align-items: center;
+	justify-content: center;
+	height: 400px;
+	font-size: 30px;
+	width: 50%;
+}
+
+.projimg{
+	width: 650;
+	height: 400;
+}
+
+.projimg:hover{
+	background-color: white;
+	opacity: 30%;
+}
+
+ul.nav{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: fixed;
+	background-color: #3c3c3c;
+	top: 0;
+	width:100%;
+}
+
+li.nav{
+	float:left;
+}
+
+li.nav:hover {
+	float:left;
+	background-color: #3cb371;
+}
+
+a.nav{
+
+	display: block;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+a.proj{
+	color: red;
+}
+
+.skills{
+	display: grid;
+	grid-template-columns: 40px 40px 40px;
+	grid-row-gap: 30px;
+	justify-content: space-evenly;
+}
+
+.skills > div{
+	background-color: none;
+	color: white;
+	justify-content: center;
+	align-content: center;
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+.skills > div:hover{
+	color: black;
+}
+
+.achievements{
+	display: grid;
+	grid-template-columns: 45% 45%;
+	grid-row-gap: 30px;
+	justify-content: space-evenly;
+}
+
+H1{
+	font-size:40px;
+	text-align: center;
+	color: white;
+}
+
+H2{
+	font-size: 25px;
+	text-align: center;
+	color: gold;
+}
+
+.achievemnts > div{
+	color: yellow;
+	background-color: none;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+.contact{
+	display: grid;
+	grid-template-columns: 10% 10% 10% 10%;
+	justify-content: space-evenly;
+}
