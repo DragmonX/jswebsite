@@ -1,21 +1,31 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './Design.css'
+import './styles.css'
 
-const myFirstElement = () => {
-	<div className='skills'>
-		<div> C/C++ </div>
-		<div> Python </div>
-		<div> PyGame </div>
-		<div> Bash </div>
-		<div> GitHub </div>
-		<div> Debating </div>
-		<div> CP </div>
-		<div> Physics </div>
-		<div> Mathematics </div>
-		<div> HTML/CSS </div>
-		<div> Haskell </div>
-	</div>}
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Achievements from './components/Achievements';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(myFirstElement);
+
+function App() {
+	return (
+		<div className="App">
+			<Navbar />
+			<br/> <br/>
+
+			<Home />
+			<Achievements />
+			<br /><br /><br /><br /><br />
+
+			<Projects />
+			<br /><br /><br /><br /><br />
+			
+			<Skills />
+			<Contact />
+		</div>
+	);
+}
+
+export default App;
